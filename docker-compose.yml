@@ -1,0 +1,14 @@
+
+version: '3.8'
+
+services:
+  referat-app:
+    build: .
+    container_name: referat-app
+    restart: always
+    ports:
+      - "80:80"
+    environment:
+      - VITE_SUPABASE_URL=https://hlyeunmeyrcanrgeuner.supabase.co
+      - VITE_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhseWV1bm1leXJjYW5yZ2V1bmVyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDU3MzUxMTEsImV4cCI6MjA2MTMxMTExMX0.OAuTKsKGHVZeePYaV9crcEpTRBIjYWH-Or74q_Jnnkg
+      - VITE_OPENAI_API_KEY=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
