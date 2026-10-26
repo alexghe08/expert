@@ -36,3 +36,6 @@ yarn-error.log*
 
 # Vite
 *.local
+
+# Local session state (anchor-memory plugin)
+.anchor/
